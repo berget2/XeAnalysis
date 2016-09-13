@@ -29,7 +29,7 @@ public:
 	Int_t  right;
 	Float_t  sum_absolute_deviation;
 
-    ClassDef(Hit, 550);
+    ClassDef(Hit, 562);
 };
 
 #endif
@@ -60,7 +60,7 @@ public:
 	Float_t  y;
 	Float_t  z;
 
-    ClassDef(Interaction, 550);
+    ClassDef(Interaction, 562);
 };
 
 #endif
@@ -86,7 +86,7 @@ public:
 	Float_t  x0;
 	Float_t  y0;
 
-    ClassDef(ConfidenceTuple, 550);
+    ClassDef(ConfidenceTuple, 562);
 };
 
 #endif
@@ -107,7 +107,7 @@ public:
 	Float_t  y;
 	Float_t  z;
 
-    ClassDef(ReconstructedPosition, 550);
+    ClassDef(ReconstructedPosition, 562);
 };
 
 #endif
@@ -158,7 +158,7 @@ public:
 	Float_t  top_hitpattern_spread;
 	TString  type;
 
-    ClassDef(Peak, 550);
+    ClassDef(Peak, 562);
 };
 
 #endif
@@ -183,7 +183,7 @@ public:
 	Float_t  noise_sigma;
 	Int_t  right;
 
-    ClassDef(Pulse, 550);
+    ClassDef(Pulse, 562);
 };
 
 #endif
@@ -208,7 +208,7 @@ public:
 	Bool_t  trigger;
 	Int_t  type;
 
-    ClassDef(TriggerSignal, 550);
+    ClassDef(TriggerSignal, 562);
 };
 
 #endif
@@ -225,12 +225,12 @@ public:
 	TString  dataset_name;
 	Int_t  event_number;
 	std::vector <Interaction>  interactions;
-	Bool_t  is_channel_suspicious[259];
-	Short_t  lone_hits_per_channel[259];
-	Short_t  lone_hits_per_channel_before[259];
+	Bool_t  is_channel_suspicious[260];
+	Short_t  lone_hits_per_channel[260];
+	Short_t  lone_hits_per_channel_before[260];
 	Int_t  n_channels;
-	Short_t  n_hits_rejected[259];
-	Short_t  noise_pulses_in[259];
+	Short_t  n_hits_rejected[260];
+	Short_t  noise_pulses_in[260];
 	std::vector <Peak>  peaks;
 	std::vector <Pulse>  pulses;
 	Int_t  sample_duration;
@@ -240,7 +240,7 @@ public:
 	std::vector <Int_t> s1s;
 	std::vector <Int_t> s2s;
 
-    ClassDef(Event, 550);
+    ClassDef(Event, 562);
 };
 
 #endif
